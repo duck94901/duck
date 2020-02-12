@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewprot" content="width=device-width, initial-scale=1.0">
+        <title>nth-of-type, nth-child</title>
+    </head>
+    <style>
+        .duck p:nth-child(2) {color:red;}
+        .duck p:nth-of-type(2) {color: lime;}
+    </style>
+    <body>
+        <div class="nth">
+            <p>h2:nth-child(2) {color:red;}</p>
+            <p>h2:nth-of-type(2) {color: lime;}</p>
+        </div>
+        <div class="duck">
+            <h2>h2 태그 (1)</h2>
+            <p>p태그 첫 번째(2)</p>
+            <p>p태그 두 번째(3) </p>
+        </div>
+
+        <p>
+            h2:nth-child(2) </br>
+            부모 안에 모든 태그를 포함해서 두 번째 
+        </p>
+        <p>
+            h2:nth-of-type(2) </br>
+            부모 안에 같은 태그만 포함해서 두 번째 </br>
+            즉 p중에서 두 번째
+        </p>
+    </body>
+</html>
